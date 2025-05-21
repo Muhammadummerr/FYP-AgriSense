@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbars in Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes floatImages {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-floatImages {
+  animation: floatImages 6s ease-in-out infinite;
+}
+
